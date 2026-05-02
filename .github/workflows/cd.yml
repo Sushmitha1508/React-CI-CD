@@ -30,4 +30,4 @@ jobs:
                 
 
             - name : "deploy to vercel"
-              run : vercel --prod --token ${{ secrets.VERCEL_CD}} --confirm --name=react-ci-cd
+              run : vercel --prod --token ${{ secrets.VERCEL_TOKEN}} --confirm --name=react-ci-cd
