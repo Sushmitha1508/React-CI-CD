@@ -1,4 +1,4 @@
-name : "sample react app cicd"
+name : "sample react app ci"
 
 on:
   push:
