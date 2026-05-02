@@ -22,8 +22,6 @@ jobs:
       
       - name : "check node version"
         run: node -v
-
-     
         #checks out the repository code
 
       - name: Install dependencies #installs project dependencies
@@ -39,4 +37,10 @@ jobs:
         run: npm test  
 
       - name : "build project"
-        run: npm run build #builds the project  
+        run: npm run build
+        
+      - name : "upload production ready build files"
+        uses :  actions/upload-artifact@v4
+        with :
+          name : build
+          path : /dist
