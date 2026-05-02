@@ -29,3 +29,9 @@ jobs:
 
       - name : "list files"
         run: ls -la
+
+      - name: Run tests #runs tests
+        run: npm test  
+
+      - name : "build project"
+        run: npm run build #builds the project  
