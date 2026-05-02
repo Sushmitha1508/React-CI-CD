@@ -3,7 +3,7 @@ name : "sample react app cicd"
 on:
   push:
     branches: 
-        - main
+        - master
   pull_request:
     branches: 
         - main 
