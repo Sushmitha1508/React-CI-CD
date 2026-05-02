@@ -21,4 +21,8 @@ jobs:
         run: node -v
 
       - name : "clone repository"
-        uses: actions/checkout@v2 #checks out the repository code
+        uses: actions/checkout@v2 
+        #checks out the repository code
+
+      - name: Install dependencies #installs project dependencies
+        run: npm install  
