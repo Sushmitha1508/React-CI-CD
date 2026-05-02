@@ -32,6 +32,9 @@ jobs:
       - name : "list files"
         run: ls -la
 
+      - name : "checak linting"
+        run: npm run lint #runs linting checks
+
       - name: Run tests #runs tests
         run: npm test  
 
