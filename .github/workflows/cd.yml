@@ -13,8 +13,8 @@ jobs:
         steps:
 
             - name : "download node js"
-             uses: actions/setup-node@v2
-             with:
+              uses: actions/setup-node@v2
+              with:
                 node-version: '20'
 
             - name : "set up vercet cli"
